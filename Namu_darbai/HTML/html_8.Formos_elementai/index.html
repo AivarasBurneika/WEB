@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formos elementai</title>
+  </head>
+  <body>
+    <div class="">
+
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Jūsų informacija</legend>
+        <table>
+          <tr>
+            <td>Vardas:</td>
+            <td>
+            <input type="text" name="Vardas" value="">
+            </td>
+          </tr>
+        <tr>
+          <td>Pavardė:</td>
+          <td>
+            <input type="text" name="Pavardė" value="">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>Klausimai</legend>
+      Kaip sužinojote apie mus?
+      <select class="" name="source">
+        <option value="1">Google</option>
+        <option value="2">Reklamos</option>
+        <option value="3">Draugų</option>
+
+      </select>
+
+      <div class=""><br>
+        Ar apsilankysite vėl?
+      </div>
+        Taip <input type="radio" name="answer" value="Taip">
+        Ne <input type="radio" name="answer" value="Ne">
+        Galbūt <input type="radio" name="answer" value="Galbūt"><br>
+
+      <div class=""><br>
+        Ką manote apie kursą?
+      </div>
+        <textarea placeholder="Rašykite viską ką galvojate" name="comment" rows="8" cols="80"></textarea>
+
+        <div class="">
+          <br>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:
+          <table>
+        <tr>
+            <td>
+             <input type="checkbox" name="languages" value="csharp">C#</td>
+            <td>
+              <input type="checkbox" name="languages" value="java">JAVA</td>
+            <td>
+              <input type="checkbox" name="languages" value="csharp">PHP</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="languages" value="html">HTML</td>
+            <td>
+             <input type="checkbox" name="languages" value="csharp">CSS</td>
+            <td>
+             <input type="checkbox" name="languages" value="javascript">JavaScript</td>
+          </tr>
+          <tr>
+            <td>
+             <input type="checkbox" name="languages" value="python">Python</td>
+         <td>
+           <input type="checkbox" name="languages" value="ruby">Ruby</td>
+          </tr>
+        </table><br>
+          <table>
+            <tr>
+              <td>
+                <input type="submit" name="" value="Siųsti">
+              </td>
+            </tr>
+          </table>
+        </div>
+  </fieldset>
+
+  </body>
+</html>
