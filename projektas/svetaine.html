@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style media="screen">
+  .logo{
+    height: 62px;
+    position: relative;
+    float: left;
+  }
+  .box1 img{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+  }
+  /* Style the Image Used to Trigger the Modal */
+  .myImg {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+  }
+
+  .myImg:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+   max-height: 100%;
+  }
+
+  /* Modal Content (Image) */
+  .modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+  }
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+   animation-name: zoom;
+   animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+   from {transform:scale(0)}
+   to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+   .modal-content {
+       width: 100%;
+   }
+ }
+  </style>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo" ><img src="images/logo.png" class="logo" alt="Logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Virtuvės baldai</a></li>
+        <li><a href="#">Svetainės baldai</a></li>
+        <li><a href="#">Spintos</a></li>
+
+        <li><a href="#">Apie mus</a></li>
+        <li><a href="#">Kontaktai</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Virtuvės baldai</a></li>
+        <li><a href="#">Svetainės baldai</a></li>
+        <li><a href="#">Spintos</a></li>
+        <li><a href="#">Medžiagos</a></li>
+        <li><a href="#">Apie mus</a></li>
+        <li><a href="#">Kontaktai</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+  <div id="index-banner" class="parallax-container" >
+
+    <div class="section no-pad-bot">
+
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Svetainės baldai</h1>
+        <div class="row center">
+            <p style="color:black;">Gaminant svetainės baldus mūsų naudojamos technologijos leidžia patenkinti net pačių išrankiausių klientų poreikius. Baldų projektavime skiriamas itin didelis dėmesys net menkiausioms detalėms. Gaminame įvairius, tinkamiausius Jūsų interjerui baldus. Visi svetainės baldai patogūs, funkcionalūs ir dailūs. </p>
+            <div class="box1">
+            <img class="myImg" src="images/guodos/svetaine/rsz_img_20180420_193324.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_dsc03627.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_dsc03048.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_dsc01874.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_dsc01872.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_20170908_143035.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_20170606_153440.jpg" alt="">
+            </div>
+            <div class="box1">
+              <img class="myImg"src="images/guodos/svetaine/rsz_20170520_114325.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+      // // Get the modal
+      // var modal = document.getElementById('myModal');
+      //
+      // // Get the image and insert it inside the modal - use its "alt" text as a caption
+      // var img = document.getElementById('myImg');
+      // var modalImg = document.getElementById("img01");
+      // var captionText = document.getElementById("caption");
+      // img.onclick = function(){
+      //   modal.style.display = "block";
+      //   modalImg.src = this.src;
+      //   captionText.innerHTML = this.alt;
+      // }
+      //
+      // // Get the <span> element that closes the modal
+      // var span = document.getElementsByClassName("close")[0];
+      //
+      // // When the user clicks on <span> (x), close the modal
+      // span.onclick = function() {
+      // modal.style.display = "none";
+      // }
+
+
+      $(".myImg").click(function(){
+        $("#myModal").css({"display":"block"});
+        $("#img01").prop("src", $(this).prop("src"));
+        $("#caption").html($(this).prop("alt"))
+      })
+
+      $(".close").click(function(){
+        $("#myModal").css({"display":"none"});
+      })
+
+  </script>
+  </body>
+</html>

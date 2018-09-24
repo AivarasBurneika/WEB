@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style media="screen">
+  .logo{
+    height: 62px;
+    position: relative;
+    float: left;
+  }
+
+
+
+
+  </style>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo" ><img src="images/logo.png" class="logo" alt="Logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="virtuve.html" target="_blank">Virtuvės baldai</a></li>
+        <li><a href="#">Svetainės baldai</a></li>
+        <li><a href="#">Slankiojančios sistemos</a></li>
+        <li><a href="#apieMus">Apie mus</a></li>
+        <li><a href="#kontaktai">Kontaktai</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="virtuve.html" target="_blank">Virtuvės baldai</a></li>
+        <li><a href="#">Svetainės baldai</a></li>
+        <li><a href="#">Slankiojančios sistemos</a></li>
+        <li><a href="#">Medžiagos</a></li>
+        <li><a href="#">Apie mus</a></li>
+        <li><a href="#kontaktai">Kontaktai</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <!-- Užsakymo forma -->
+<div class="nav-wrapper container">
+  <div class="order_container">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="Įrašykite savo vardą" id="first_name" type="text" class="validate">
+            <label for="first_name">Vardas</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="Įrašykite savo telefono numerį" id="phoneNumber" type="text" class="validate">
+            <label for="phoneNumber">Telefono numeris</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="comment" type="text" class="validate">
+            <label for="comment">Aprašykite norimą baldą ir leiskite mums įgyvendinti Jūsų svajonę</label>
+          </div>
+        </div>
+        <div class="row center">
+          <a href="uzsakymo_forma.html" id="download-button" type="submit" class="btn-large waves-effect waves-light btn amber darken-4"><b>Pateikti užklausą</b></a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<footer class="page-footer teal brown lighten-5 black-text">
+  <div  class="container">
+    <div  class="row">
+      <div class="col l6 s12">
+        <h5 class="black-text" id="apieMus">Apie mus</h5>
+        <p class="black-text">Guobos baldai – tai nestandartinių baldų projektavimas ir gamyba pagal individualius užsakymus. Mes gaminame: virtuvės, prieškambario, miegamojo, vonios, svetainės, biuro, vaiko kambario baldus, slankiojančias sistemas ir visus kitus nestandartinius baldus.</p>
+
+
+      </div>
+      <div class="col l3 s12">
+        <h5 class="black-text">Nuorodos</h5>
+        <ul >
+          <li ><a class="black-text" href="index.html">Pradžia</a></li>
+          <li><a class="black-text" href="virtuve.html">Virtuvės baldai</a></li>
+          <li><a class="black-text" href="#!">Svetainės baldai</a></li>
+          <li><a class="black-text" href="sistemos.html">Slankiojančios sistemos</a></li>
+        </ul>
+      </div>
+      <div  class="col l3 s12">
+        <h5 class="black-text" id="kontaktai">Kontaktai</h5>
+        <ul>
+          <li>Laisvės pr. 60, Vilnius</li>
+          <li>Tel: +37065669099</li>
+          <li><a class="black-text" href="http://www.guobosbaldai.lt">www.guobosbaldai.lt</a></li>
+          <li><a class="black-text" href="#!">info@guobosbaldai.lt</a></li>
+        </ul>
+        <a class="black-text" href="https://www.facebook.com/Guobos-baldai-246022925538150/">
+          <i  class="fa fa-facebook-official" style="font-size:36px"></i>
+        </a>
+        <a class="black-text" href="https://twitter.com/">
+          <i class="fa fa-twitter-square" style="font-size:36px"></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright black-text" >
+    <div class="container" >
+    Made by <a class="black-text">Vaida, Aivaras, Asta</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
